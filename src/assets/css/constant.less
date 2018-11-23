@@ -1,0 +1,37 @@
+@white: #fff;
+@white-1: #fbfbfb;
+@white-2: #e5e5e5;
+@white-3: #ccc;
+@white-to-black: #959595;
+@black-5: #6c6b70;
+@black-3: #333;
+@black-2: #232228;
+@black90p: rgba(0, 0, 0, 0.9);
+@theme: #2ca2f9;
+@red: #e80000;
+@orange: #ff7200;
+@yellow: #f8b300;
+@lemon :#d1c90e;
+
+@font_size_main: 18px;
+@font_size_med: 15px;
+@font_size_small: 13px;
+@font_size_mini: 12px;
+
+@header_height: 58px;
+@nav_height: 62px;
+@module_title_height: 54px;
+@search_form_height: 63px;
+
+@app_width--dev: 375;
+@app_height--dev: 667;
+// 100vh may be not equal to window.innerHeight on some mobile browsers like qq, so I set html.fontSize = window.innerHeight
+@app_height--prod: 1rem;
+
+@app_cont_h_dev: 609;
+@app_cont_h--prod: ~'1rem - 100vw * 58 / 375';
+.calc_on_app_cont (@num) {
+  @result: calc((@app_cont_h--prod) * @num / @app_cont_h_dev);
+}
+
+@padding_width: 13px;
