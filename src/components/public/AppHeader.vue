@@ -67,6 +67,5 @@ export default {
   height: 27px;
   transform: translate(1px, -3px);
   font-size: 27px;
-  color: red;
 }
 </style>
